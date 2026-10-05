@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade · AgentON</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#07051a;color:#e4e0f7;font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.7}
+a{color:#b9a6ff;text-decoration:underline;text-decoration-color:rgba(185,166,255,.35);text-underline-offset:3px}
+a:hover{color:#fff;text-decoration-color:#fff}
+a:focus-visible{outline:2px solid #8B5CF6;outline-offset:3px;border-radius:4px}
+.glow{position:absolute;top:-300px;left:50%;transform:translateX(-50%);width:1200px;height:700px;pointer-events:none;background:radial-gradient(ellipse at 35% 40%,rgba(0,209,255,.14),transparent 55%),radial-gradient(ellipse at 65% 45%,rgba(139,92,246,.2),transparent 55%);filter:blur(20px);z-index:0}
+header{position:sticky;top:0;z-index:10;background:rgba(7,5,26,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.bar{max-width:1120px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#f4f2ff;font-size:20px;font-weight:700;letter-spacing:-.025em}
+.logo svg{width:32px;height:32px;filter:drop-shadow(0 0 12px rgba(122,61,255,.6))}
+.logo b{background:linear-gradient(90deg,#00D1FF,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.back{font-size:14px;font-weight:500;color:#c9c4e6;text-decoration:none}
+.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:72px 24px 96px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:64px}
+.intro{grid-column:1/-1;max-width:760px}
+h1{margin:0;font-size:clamp(36px,5vw,56px);line-height:1.05;font-weight:800;letter-spacing:-.04em;color:#f4f2ff}
+.meta{margin:16px 0 0;color:#9e98c0;font-size:15px}
+.lead{margin:24px 0 0;font-size:18px;line-height:1.65;color:#b4aed4}
+nav.toc{position:sticky;top:100px;align-self:start;font-size:14px;border-left:1px solid rgba(255,255,255,.08);padding-left:18px}
+nav.toc p{margin:0 0 10px;font-weight:700;color:#f4f2ff}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;counter-reset:t}
+nav.toc li{counter-increment:t}
+nav.toc a{color:#9e98c0;text-decoration:none;display:flex;gap:8px}
+nav.toc a::before{content:counter(t);color:#5c5682;min-width:16px}
+nav.toc a:hover{color:#fff}
+article{max-width:720px}
+section{padding-top:8px;margin-bottom:44px}
+h2{margin:0 0 14px;font-size:24px;line-height:1.25;font-weight:700;letter-spacing:-.02em;color:#f4f2ff;display:flex;gap:14px;align-items:baseline}
+h2 span{font-size:15px;font-weight:600;color:#7d77a3;min-width:24px}
+p,li{font-size:16px;color:#c9c4e6}
+article ul{padding-left:20px;margin:0 0 16px}
+article li{margin-bottom:8px}
+article li::marker{color:#8B5CF6}
+strong{color:#f4f2ff;font-weight:600}
+.ph{background:rgba(250,204,21,.12);color:#fde68a;border:1px dashed rgba(250,204,21,.45);border-radius:6px;padding:1px 6px;font-size:.92em;white-space:nowrap}
+.note{border:1px solid rgba(139,92,246,.35);background:rgba(139,92,246,.08);border-radius:14px;padding:18px 20px;margin:0 0 44px}
+.note p{margin:0}
+footer{position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.06)}
+.fbar{max-width:1120px;margin:0 auto;padding:28px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#7d77a3}
+.fbar div{display:flex;gap:24px;flex-wrap:wrap}
+.fbar a{color:#9e98c0;text-decoration:none}
+.fbar a[aria-current]{color:#f4f2ff}
+@media (max-width:860px){.wrap{grid-template-columns:1fr;gap:40px;padding-top:48px}nav.toc{position:static}}
+</style>
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<header><div class="bar">
+<a class="logo" href="Landing_AgentON.html" aria-label="AgentON, página inicial"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="lg" x1="10%" y1="0%" x2="90%" y2="100%"><stop offset="0%" stop-color="#00D1FF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs><path d="M50 10 L83 30 L83 70 L50 90 L17 70 L17 30 Z" fill="none" stroke="url(#lg)" stroke-width="10" stroke-linejoin="round"/><circle cx="50" cy="50" r="13" fill="url(#lg)"/></svg><span>Agent<b>ON</b></span></a>
+<a class="back" href="Landing_AgentON.html">Voltar ao site</a>
+</div></header>
+<main class="wrap">
+<div class="intro">
+<h1>Política de privacidade</h1>
+<p class="meta">Última atualização: 1 de outubro de 2026</p>
+<p class="lead">Esta política explica quais dados pessoais o AgentON trata, para quê, com quem compartilha e como você pode exercer seus direitos, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, LGPD).</p>
+</div>
+<nav class="toc" aria-label="Seções">
+<p>Nesta página</p>
+<ol>
+<li><a href="#papeis">Quem controla os dados</a></li>
+<li><a href="#coleta">Dados que tratamos</a></li>
+<li><a href="#finalidades">Para que usamos</a></li>
+<li><a href="#ia">IA e conversas</a></li>
+<li><a href="#compartilhamento">Compartilhamento</a></li>
+<li><a href="#internacional">Transferência internacional</a></li>
+<li><a href="#seguranca">Segurança</a></li>
+<li><a href="#retencao">Por quanto tempo</a></li>
+<li><a href="#direitos">Seus direitos</a></li>
+<li><a href="#cookies">Cookies</a></li>
+<li><a href="#criancas">Crianças</a></li>
+<li><a href="#alteracoes">Alterações</a></li>
+<li><a href="#contato">Encarregado e contato</a></li>
+</ol>
+</nav>
+<article>
+
+<section id="papeis"><h2><span>1</span>Quem controla os dados</h2>
+<p>O AgentON é oferecido por <span class="ph">[Razão social]</span>, CNPJ <span class="ph">[00.000.000/0001-00]</span>. Nosso papel muda conforme o tipo de dado:</p>
+<ul>
+<li><strong>Como controlador</strong>, tratamos os dados de quem visita este site, solicita demonstração, contrata o serviço ou usa o sistema como Usuário.</li>
+<li><strong>Como operador</strong>, tratamos os dados que nossos Clientes inserem no sistema sobre os contatos deles (conversas, telefones, negócios). Nesse caso, quem decide como esses dados são usados é o Cliente, e pedidos sobre eles devem ser feitos primeiro à empresa com quem você conversou.</li>
+</ul>
+</section>
+
+<section id="coleta"><h2><span>2</span>Dados que tratamos</h2>
+<p><strong>Visitantes e interessados:</strong> nome, telefone e mensagens enviadas ao nosso WhatsApp, além de dados técnicos de navegação (endereço IP, navegador, páginas acessadas).</p>
+<p><strong>Clientes e Usuários:</strong> nome, e-mail, telefone, cargo, empresa, dados de faturamento, credenciais de acesso e registros de uso do sistema (logins, ações, aprovações).</p>
+<p><strong>Contatos dos Clientes</strong> (como operador): nome, telefone, e-mail, foto de perfil do canal, conteúdo de mensagens, arquivos e áudios recebidos, tags, negócios, atividades e anotações feitas pela equipe do Cliente.</p>
+</section>
+
+<section id="finalidades"><h2><span>3</span>Para que usamos</h2>
+<ul>
+<li>Prestar o serviço contratado, incluindo receber e enviar mensagens, executar o agente de IA e gerar relatórios (execução de contrato).</li>
+<li>Responder pedidos de demonstração e de suporte (procedimentos preliminares ao contrato e legítimo interesse).</li>
+<li>Cobrar e emitir notas fiscais (cumprimento de obrigação legal).</li>
+<li>Manter a segurança, prevenir fraudes e registrar acessos, conforme o Marco Civil da Internet (obrigação legal e legítimo interesse).</li>
+<li>Enviar comunicações sobre o produto, que você pode recusar a qualquer momento (legítimo interesse ou consentimento).</li>
+</ul>
+<p>Não vendemos dados pessoais.</p>
+</section>
+
+<section id="ia"><h2><span>4</span>IA e conversas</h2>
+<p>Quando o Cliente ativa o agente de IA, o conteúdo das conversas e o contexto do negócio são enviados a provedores de modelos de linguagem para gerar respostas e sugestões. Esses dados são usados apenas para executar a tarefa e não são usados por nós, nem autorizados por nós, para treinar modelos de terceiros. Todas as decisões e transferências do agente ficam registradas no histórico da conversa, e avanços que exigem aprovação passam por uma pessoa da equipe do Cliente.</p>
+</section>
+
+<section id="compartilhamento"><h2><span>5</span>Compartilhamento</h2>
+<p>Compartilhamos dados apenas na medida necessária, com:</p>
+<ul>
+<li>provedores de infraestrutura e hospedagem: <span class="ph">[ex.: provedor de nuvem]</span>;</li>
+<li>provedores de modelos de IA: <span class="ph">[ex.: nome do provedor]</span>;</li>
+<li>canais de mensagem conectados pelo Cliente, como WhatsApp (Meta) e Telegram;</li>
+<li>meios de pagamento e emissão fiscal: <span class="ph">[ex.: gateway de pagamento]</span>;</li>
+<li>integrações que o próprio Cliente configura, como webhooks, n8n, Make, Hotmart e API;</li>
+<li>autoridades públicas, quando houver obrigação legal ou ordem judicial.</li>
+</ul>
+<p>Os dados de cada Cliente ficam isolados e não são acessíveis por outros Clientes.</p>
+</section>
+
+<section id="internacional"><h2><span>6</span>Transferência internacional</h2>
+<p>Alguns fornecedores, como provedores de nuvem e de IA, podem processar dados fora do Brasil. Nesses casos, adotamos as salvaguardas previstas no art. 33 da LGPD, como cláusulas contratuais e escolha de fornecedores com padrões de proteção adequados.</p>
+</section>
+
+<section id="seguranca"><h2><span>7</span>Segurança</h2>
+<p>Usamos criptografia no tráfego de dados, controle de acesso por perfil de permissão, isolamento de dados por empresa, registros de auditoria e backups periódicos. Nenhum sistema é totalmente imune a falhas; em caso de incidente com risco relevante, comunicaremos os afetados e a Autoridade Nacional de Proteção de Dados (ANPD), conforme a lei. Em instalações no servidor do próprio Cliente, a segurança da infraestrutura é responsabilidade do Cliente.</p>
+</section>
+
+<section id="retencao"><h2><span>8</span>Por quanto tempo</h2>
+<ul>
+<li>Dados de conta e do sistema: enquanto o contrato estiver ativo e por até <span class="ph">[30]</span> dias após o cancelamento, para exportação.</li>
+<li>Registros de acesso: 6 meses, conforme o Marco Civil da Internet.</li>
+<li>Dados fiscais e contratuais: pelo prazo exigido pela legislação.</li>
+<li>Contatos de interessados que não contrataram: até <span class="ph">[12]</span> meses ou até pedido de exclusão.</li>
+</ul>
+</section>
+
+<section id="direitos"><h2><span>9</span>Seus direitos</h2>
+<p>Pela LGPD, você pode pedir: confirmação de que tratamos seus dados, acesso, correção, anonimização ou exclusão de dados desnecessários, portabilidade, informação sobre compartilhamentos, revogação do consentimento e revisão de decisões tomadas apenas por meio automatizado.</p>
+<p>Envie seu pedido para <span class="ph">[privacidade@agenton.com.br]</span>. Responderemos em até 15 dias. Se seus dados estão no sistema por meio de uma empresa cliente, encaminharemos o pedido a ela. Você também pode reclamar à ANPD.</p>
+</section>
+
+<section id="cookies"><h2><span>10</span>Cookies</h2>
+<p>O sistema usa cookies essenciais para manter seu login e sua sessão. Este site pode usar cookies de análise para entender a navegação, de forma agregada. Você pode bloquear cookies nas configurações do navegador, mas isso pode afetar o funcionamento do sistema.</p>
+</section>
+
+<section id="criancas"><h2><span>11</span>Crianças</h2>
+<p>O AgentON é uma ferramenta para empresas e não se destina a menores de 18 anos.</p>
+</section>
+
+<section id="alteracoes"><h2><span>12</span>Alterações</h2>
+<p>Esta política pode ser atualizada. A data no topo indica a versão vigente, e mudanças relevantes serão comunicadas por e-mail ou dentro do sistema.</p>
+</section>
+
+<section id="contato"><h2><span>13</span>Encarregado e contato</h2>
+<p>Encarregado pelo tratamento de dados pessoais (DPO): <span class="ph">[nome]</span>, e-mail <span class="ph">[privacidade@agenton.com.br]</span>. Para dúvidas gerais, fale com o <a href="https://wa.me/5511939279844?text=Ol%C3%A1!%20Preciso%20de%20suporte%20para%20o%20sistema%20AgentON." target="_blank" rel="noopener">suporte pelo WhatsApp</a>.</p>
+</section>
+
+</article>
+</main>
+<footer><div class="fbar">
+<span>© 2026 AgentON</span>
+<div><a href="termos-de-uso.html">Termos de uso</a><a href="politica-de-privacidade.html" aria-current="page">Privacidade</a><a href="https://wa.me/5511939279844?text=Ol%C3%A1!%20Preciso%20de%20suporte%20para%20o%20sistema%20AgentON." target="_blank" rel="noopener">Suporte</a></div>
+</div></footer>
+</body>
+</html>
